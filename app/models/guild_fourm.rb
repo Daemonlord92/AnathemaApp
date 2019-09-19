@@ -1,0 +1,2 @@
+class GuildFourm < ApplicationRecord
+end

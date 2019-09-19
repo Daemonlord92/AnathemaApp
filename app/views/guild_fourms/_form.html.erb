@@ -1,0 +1,17 @@
+<%= form_with(model: guild_fourm, local: true) do |form| %>
+  <% if guild_fourm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(guild_fourm.errors.count, "error") %> prohibited this guild_fourm from being saved:</h2>
+
+      <ul>
+        <% guild_fourm.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
