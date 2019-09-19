@@ -1,2 +1,0 @@
-class GuildFourm < ApplicationRecord
-end

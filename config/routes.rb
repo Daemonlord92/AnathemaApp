@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  resources :comments
+  resources :posts
+  get 'static/home'
+  get 'static/index'
   devise_for :users
-  resources :guild_fourms
-  root to: 'guild_fourms#index'
+  root to: 'static#home'
 end
