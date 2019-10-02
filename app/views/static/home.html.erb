@@ -1,2 +1,15 @@
-<h1>Static#home</h1>
-<p>Find me in app/views/static/home.html.erb</p>
+<h2>Anathema Guild Fourm</h2>
+<div>
+	<% if notice %>
+	  <p class="alert alert-success"><%= notice %></p>
+	<% end %>
+	<% if alert %>
+	  <p class="alert alert-danger"><%= alert %></p>
+	<% end %>
+</div>
+<div>
+	<%= render 'shared/navbar_top' %>
+</div>
+<div >
+	<%= render 'posts/index' %>
+</div>
